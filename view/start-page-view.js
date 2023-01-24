@@ -5,8 +5,8 @@ const createStartPageTemplate = () => {
         `<section class="start-page">  
         <div class="start-fields">
             <input type="text" id="summary" placeholder="Общая сумма">
-            <input type="text" id="in-game" placeholder="В игре">
-            <input type="text" id="on-draws" placeholder="На ничьих">
+            <input type="text" id="deficit" placeholder="Дефицит">
+            <input type="text" id="on-draws" placeholder="Тестовое поле">
         </div>
 
         <div class="start-buttons">

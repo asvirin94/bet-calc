@@ -35,6 +35,7 @@ export default class MainPresenter {
 
     #goToMainPage = () => {
         globalData.startSum = Number(this.#startPage.element.querySelector('#summary').value);
+        globalData.deficit = Number(this.#startPage.element.querySelector('#deficit').value);
         globalData.actualSum = globalData.startSum;
         this.#renderMainPage();
         this.#startPage.removeElement();
