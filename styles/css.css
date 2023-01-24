@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   height: 100vh;
+   background: rgb(2,0,36);
+   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(3, 22, 36) 55%, rgb(4, 55, 66) 100%);
+   font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: antiquewhite;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.start-page {
+    color: aquamarine;
+    max-width: 800px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.start-fields, .start-buttons {
+    display: flex;
+    justify-content: space-around;
+    border-width: 0;
+    color: black;
+}
+
+.start-buttons {
+    margin-top: 10px;
+}
+
+.start-page input {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.field-button {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(4, 43, 60);
+}
+
+.main-page {
+    max-width: 100%;
+    margin-top: 80px;
+    color: aquamarine;
+}
+
+.betting-history {
+    width: 400px;
+    margin: 30px auto;
+}
+
+.main-start__button {
+    width: 400px;
+    height: 55px;
+    text-align: center;
+    background-color: rgb(146, 169, 170);
+    margin: 40px auto;
+}
+
+.bets-heading {
+    max-width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bet-button {
+    width: 50px;
+    height: 25px;
+}
+
+.good-bet__button {
+    background-color: chartreuse;
+}
+
+.bad-bet__button {
+    background-color: crimson;
+}
+
+.bet-form {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.bet-form-fields {
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    
+}
+
+.bet-form-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.bet-sum, .bet-cf {
+    width: 100px;
+    text-align: center;
+}
+
+
+.bet-add-button, .bet-how-much-button {
+    width: 120px;
+    color: black;
+    background-color: bisque;
+}
+
+.solo-bet-info {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin: 10px auto;
+}
+
+.solo-bet-info p {
+    width: 120px;
+    background-color: rgb(3, 3, 21);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 2px solid black;
+}
