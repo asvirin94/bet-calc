@@ -36,7 +36,11 @@ export default class BetView extends AbstractView {
     }
 
     get prizeValue() {
-       return Number(this.element.querySelector('.bet-info-sum').textContent * this.element.querySelector('.bet-info-cf').textContent);
+       return Number(this.element.querySelector('.bet-info-sum').textContent * this.element.querySelector('.bet-info-cf').textContent - this.element.querySelector('.bet-info-sum').textContent);
+    }
+
+    get actualSumPlus() {
+        return Number(this.element.querySelector('.bet-info-sum').textContent * this.element.querySelector('.bet-info-cf').textContent);
     }
 
     #greenButtonHandler = () => {

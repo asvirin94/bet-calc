@@ -54,7 +54,7 @@ export default class MainPresenter {
         if(!cfValue) {
             this.#newBetForm.element.querySelector('.bet-sum').value = "Укажите кф";
         } else {
-            this.#newBetForm.element.querySelector('.bet-sum').value = Math.ceil(globalData.deficit / cfValue);
+            this.#newBetForm.element.querySelector('.bet-sum').value = Math.ceil(globalData.deficit / (cfValue - 1));
         }
         
     }
@@ -75,7 +75,7 @@ export default class MainPresenter {
     }
 
     #takeNiceBet = () => {
-        const prize = this.#newBet.prizeValue;
+        const prize = this.#newBet.actualSumPlus;
         globalData.actualSum = globalData.actualSum + prize;
 
         if(prize > globalData.deficit) {
@@ -100,5 +100,3 @@ export default class MainPresenter {
         this.#newBetForm.restoreHandlers();
     }
 }   
-
-
